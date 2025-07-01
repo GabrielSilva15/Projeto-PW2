@@ -1,7 +1,18 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vitest/config'
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  test: {
+    // permite usar globals como `describe`, `it`, `expect`
+    globals: true,
+    // simula o DOM para testes de componentes React
+    environment: 'jsdom',
+    // inclua .tsx nos padrões de arquivo de teste
+    include: ['**/*.{test,spec}.{js,ts,jsx,tsx}'],
+  },
+  // se você também estiver usando Vite para build
+  esbuild: {
+    // habilita TSX no build de testes
+    jsxFactory: 'React.createElement',
+    jsxFragment: 'React.Fragment',
+  },
 })
