@@ -1,11 +1,11 @@
 # Projeto PW2 - Sistema de Eventos
 
-Este projeto é uma aplicação web desenvolvida com **React**, **TypeScript** e **Vite** para gerenciamento e visualização de eventos. O sistema permite alternar entre cadastro de e-mail e visualização de eventos, utilizando componentes reutilizáveis e estilização moderna.
+Este projeto é uma aplicação web desenvolvida com **React**, **TypeScript** e **Vite** para gerenciamento e visualização de eventos.
 
 ## Funcionalidades
 
 - Visualização de eventos com título, endereço, data e imagem
-- Cadastro de e-mail
+- Cadastro de usuários
 - Navegação simples entre páginas
 - Componentização com React
 - Testes unitários e E2E
