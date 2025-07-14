@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { CardEvento } from '../src/components/CardEvento'
+import { CardEvento } from '../../src/components/CardEvento'
 import moment from 'moment'
 import React from 'react'
 

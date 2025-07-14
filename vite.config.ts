@@ -7,7 +7,7 @@ export default defineConfig({
     // simula o DOM para testes de componentes React
     environment: 'jsdom',
     // inclua .tsx nos padrões de arquivo de teste
-    include: ['**/*.{test,spec}.{js,ts,jsx,tsx}'],
+    include: ['tests/unit/**/*.{test,spec}.{js,ts,jsx,tsx}'],
   },
   // se você também estiver usando Vite para build
   esbuild: {

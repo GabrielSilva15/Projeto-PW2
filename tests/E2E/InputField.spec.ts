@@ -4,6 +4,7 @@ test.describe('Testes E2E do componente InputField', () => {
 
     test.beforeEach(async ({ page }) => {
         await page.goto('/');
+        await page.getByRole('button', { name: 'Cadastro' }).click();
     });
 
     test('deve renderizar o input com o label', async ({ page }) => {

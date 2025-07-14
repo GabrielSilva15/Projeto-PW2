@@ -64,6 +64,12 @@ npm run test
 
 ### Testes E2E (Playwright)
 
+Para instalar os drivers do PlayWright:
+
+```bash
+npm init playwright@latest
+```
+
 Para rodar os testes end-to-end:
 
 ```bash
